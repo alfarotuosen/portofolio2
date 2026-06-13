@@ -1,0 +1,245 @@
+/* ================= RESET DASAR ================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body{
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Membuat scroll menjadi halus */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 10%;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo{
+    color: #ff00d4;
+}
+
+/* Menu Navbar */
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Link Navbar */
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* Efek hover */
+.nav-links a:hover{
+    color: #ff00d4;
+}
+
+/* ================= HERO SECTION ================= */
+.hero{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* Foto Profil */
+.profile-img{
+    width: 160px;
+    height: 180px;
+
+    border-radius: 15%;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+
+    border: 5px solid #ff00f2;
+}
+
+/* Judul Hero */
+.hero h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+/* Deskripsi */
+.hero p{
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Tombol */
+.btn{
+    background: #ff00f2;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* Hover tombol */
+.btn:hover{
+    background: #ff00dd;
+}
+
+/* ================= SECTION ================= */
+.section{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Judul Section */
+.section h2{
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #ff00f2;
+}
+
+/* ================= CARD ================= */
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card{
+    background: white;
+
+    width: 250px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+/* Hover Card */
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background: #ff00d4;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px){
+
+    /* Navbar menjadi vertikal */
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero title lebih kecil */
+    .hero h1{
+        font-size: 32px;
+    }
+
+}/* ================= GALERI ================= */
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item{
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+
+    transition: 0.4s ease;
+}
+
+.gallery-item img:hover{
+    transform: scale(1.08);
+}
+
+.social-icons a{
+    font-size:70px;
+    color:rgb(255, 0, 234);
+    transition:0.3s;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+}
+
+.social-icons a{
+    font-size:80px;
+    color:rgb(255, 0, 221);
+    transition:all 0.3s ease;
+}
+
+.social-icons a:hover{
+    transform:scale(1.2);
+    color:#00bcd4;
+}
+
+.project-img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
